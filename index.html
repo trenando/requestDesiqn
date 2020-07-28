@@ -13,163 +13,320 @@
 
     <header class="header">
 
-        <section class="header__toptitle">
-            <nav class="toptitle__nav">
-                <ul class="toptitle__block">
-                    <li class="toptitle__link">
-                        <a href="#">Компания</a>
-                    </li>
-                    <li class="toptitle__link">
-                        <a href="#">Портфолио</a>
-                    </li>
-                    <li class="toptitle__link">
-                        <a href="#">Проектирование</a>
-                    </li>
-                </ul>
-                <ul class="toptitle__block">
-                    <li class="toptitle__link">
-                        <a href="#">Ресторанам</a>
-                    </li>
-                    <li class="toptitle__link">
-                        <a href="#">Застройщикам</a>
-                    </li>
-                    <li class="toptitle__link">
-                        <a href="#">Гос.заказчикам</a>
-                    </li>
-                    <li class="toptitle__link">
-                        <a href="#">Таблет-питание</a>
-                    </li>
-                </ul>
-                <ul class="toptitle__block">
-                    <li class="toptitle__link">
-                        <a href="#">Сервис</a>
-                    </li>
-                    <li class="toptitle__link">
-                        <a href="#">Контакты</a>
-                    </li>
-                    <li class="toptitle__contacts">
-                        <img src="./assets/images/header/1.png" alt="Сообщение">
-                        <a href="mailto:info@stolovay.ru" class="toptitle__mail">info@stolovay.ru</a>
-                    </li>
-                    <li class="toptitle__contacts">
-                        <img src="./assets/images/header/2.png" alt="Трубка">
-                        <a href="tel:84957907205" class="toptitle__number">8 495 790-72-05</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="header__content">
 
-        <section class="header__title">
-            <div class="title__container">
-                <div class="title__block">
-                    <img src="./assets/images/header/3.png" alt="Столовая.РУ">
-                    <a href="#" class="title__name"><strong>Столовая.РУ</strong></span>
-                </div>
-                <form class="title__selector">
-                    <div class="selector__name">Все</div>
-                    <div class="selector__search">
-                        <input type="text" class="selector__input">
+            <section class="header__toptitle">
+                <nav class="toptitle__nav">
+                    <ul class="toptitle__block">
+                        <li class="toptitle__link">
+                            <a href="#">Компания</a>
+                        </li>
+                        <li class="toptitle__link">
+                            <a href="#">Портфолио</a>
+                        </li>
+                        <li class="toptitle__link">
+                            <a href="#">Проектирование</a>
+                        </li>
+                    </ul>
+                    <ul class="toptitle__block">
+                        <li class="toptitle__link">
+                            <a href="#">Ресторанам</a>
+                        </li>
+                        <li class="toptitle__link">
+                            <a href="#">Застройщикам</a>
+                        </li>
+                        <li class="toptitle__link">
+                            <a href="#">Гос.заказчикам</a>
+                        </li>
+                        <li class="toptitle__link">
+                            <a href="#">Таблет-питание</a>
+                        </li>
+                    </ul>
+                    <ul class="toptitle__block">
+                        <li class="toptitle__link">
+                            <a href="#">Сервис</a>
+                        </li>
+                        <li class="toptitle__link">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="toptitle__contacts">
+                            <img src="./assets/images/header/1.png" alt="Сообщение">
+                            <a href="mailto:info@stolovay.ru" class="toptitle__mail">info@stolovay.ru</a>
+                        </li>
+                        <li class="toptitle__contacts">
+                            <img src="./assets/images/header/2.png" alt="Трубка">
+                            <a href="tel:84957907205" class="toptitle__number">8 495 790-72-05</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="header__title">
+                <div class="title__container">
+                    <div class="title__block">
+                        <img src="./assets/images/header/3.png" alt="Столовая.РУ">
+                        <a href="#" class="title__name"><strong>Столовая.РУ</strong></span>
                     </div>
-                    <button type="submit" class="selector__btn">
-                        <img src="./assets/images/header/4.png" alt="Поиск">
-                    </button>
-                </form>
-                <div class="title__info">
-                    <img src="./assets/images/header/5.png" alt="портал поставщиков">
-                    <a href="#" class="title__infotext">Мы на портале поставщиков</a>
-                </div>
-                <a href="#" class="title__basket">
-                    <div class="basket__left">
-                        <span class="basket__count">12</span>
-                        <img src="./assets/images/header/6.png" alt="Корзина">
+                    <form class="title__selector">
+                        <div id="search-btn" class="selector__name">Все</div>
+                        <div id="selector-block" class="selector__block">
+                            <span>Выберите категорию:</span>
+                            <ul>
+                                <li>Тепловое</li>
+                                <li>Холодильное</li>
+                                <li>Электромеханическое</li>
+                                <li>Посудомоечное</li>
+                                <li>Барное</li>
+                                <li>Хлебопекарное</li>
+                                <li>Линии раздачи</li>
+                                <li>Нетральное</li>
+                                <li>Для фаст фуда</li>
+                                <li>Для залов</li>
+                                <li>Весовое</li>
+                            </ul>
+                        </div>
+                        <div class="selector__search">
+                            <input type="text" class="selector__input">
+                        </div>
+                        <button type="submit" class="selector__btn">
+                            <img src="./assets/images/header/4.png" alt="Поиск">
+                        </button>
+                    </form>
+                    <div class="title__info">
+                        <img src="./assets/images/header/5.png" alt="портал поставщиков">
+                        <a href="#" class="title__infotext">Мы на портале поставщиков</a>
                     </div>
-                    <div class="basket__right">
-                        <span class="basket__summ">Сумма</span>
-                        <span class="basket__cost"><strong>150 000 руб.</strong></span>
+                    <a href="#" class="title__basket">
+                        <div class="basket__left">
+                            <span class="basket__count">12</span>
+                            <img src="./assets/images/header/6.png" alt="Корзина">
+                        </div>
+                        <div class="basket__right">
+                            <span class="basket__summ">Сумма</span>
+                            <span class="basket__cost"><strong>150 000 руб.</strong></span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="header__bottomtitle">
+                <div class="bottomtitle__container">
+                    <ul class="bottomtitle__items">
+                        <li data-category-id="hot" class="bottomtitle__item category-menu">
+                            <img src="./assets/images/header/panel/Тепловое.png" alt="Тепловое">
+                            <span><strong>Тепловое</strong></span>
+                        </li>
+                        <li data-category-id="cold" class="bottomtitle__item category-menu">
+                            <img src="./assets/images/header/panel/Холодильное.png" alt="Холодильное">
+                            <span><strong>Холодильное</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Электромеханическое.png" alt="Электромеханическое">
+                            <span><strong>Электромеханическое</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Посудомоечное.png" alt="Посудомоечное">
+                            <span><strong>Посудомоечное</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Хлебопекарное.png" alt="Хлебопекарное">
+                            <span><strong>Хлебопекарное</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Линии_раздачи.png" alt="Линии раздачи">
+                            <span><strong>Линии раздачи</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Нейтральное.png" alt="Нейтральное">
+                            <span><strong>Нейтральное</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Для_фаст_фуда.png" alt="Для фаст фуда">
+                            <span><strong>Для фаст фуда</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Для_залов.png" alt="Для залов">
+                            <span><strong>Для залов</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Вспомогательное.png" alt="Вспомогательное">
+                            <span><strong>Вспомогательное</strong></span>
+                        </li>
+                        <li class="bottomtitle__item">
+                            <img src="./assets/images/header/panel/Для_магазинов.png" alt="Для магазинов">
+                            <span><strong>Для магазинов</strong></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="header__topmobile">
+                <div class="header__mobilecontainer">
+                    <div class="header__mobilebtn">
+                        <img src="./assets/images/header/mobile/1.png" alt="Меню">
                     </div>
-                </a>
-            </div>
-        </section>
+                    <div class="header__mobilehead">
+                        <img src="./assets/images/header/mobile/2.png" alt="Столовая.РУ">
+                    </div>
+                    <div class="header__mobileinfo">
+                        <span class="header__mobiletitle">Столовая.РУ</span>
+                        <span class="header__mobiletext">Создание пищеблоков</span>
+                    </div>
+                    <div class="header__mobilesearch">
+                        <img src="./assets/images/header/mobile/3.png" alt="Поиск">
+                    </div>
+                    <a href="tel:84957907205" class="header__phone">
+                        <img src="./assets/images/header/mobile/4.png" alt="Позвонить">
+                    </a>
+                    <div class="basket__mobile">
+                        <span>12</span>
+                        <img src="./assets/images/header/mobile/5.png" alt="Корзина">
+                    </div>
+                </div>
+            </section>
 
-        <section class="header__bottomtitle">
-            <div class="bottomtitle__container">
-                <ul class="bottomtitle__items">
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Тепловое.png" alt="Тепловое">
-                        <span><strong>Тепловое</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Холодильное.png" alt="Холодильное">
-                        <span><strong>Холодильное</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Электромеханическое.png" alt="Электромеханическое">
-                        <span><strong>Электромеханическое</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Посудомоечное.png" alt="Посудомоечное">
-                        <span><strong>Посудомоечное</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Хлебопекарное.png" alt="Хлебопекарное">
-                        <span><strong>Хлебопекарное</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Линии_раздачи.png" alt="Линии раздачи">
-                        <span><strong>Линии раздачи</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Нейтральное.png" alt="Нейтральное">
-                        <span><strong>Нейтральное</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Для_фаст_фуда.png" alt="Для фаст фуда">
-                        <span><strong>Для фаст фуда</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Для_залов.png" alt="Для залов">
-                        <span><strong>Для залов</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Вспомогательное.png" alt="Вспомогательное">
-                        <span><strong>Вспомогательное</strong></span>
-                    </li>
-                    <li class="bottomtitle__item">
-                        <img src="./assets/images/header/panel/Для_магазинов.png" alt="Для магазинов">
-                        <span><strong>Для магазинов</strong></span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <section class="header__bottommobile">
+                <span class="bottomtitle__span"><strong>Оборудование</strong></span>
+            </section>
 
-        <section class="header__topmobile">
-            <div class="header__mobilecontainer">
-                <div class="header__mobilebtn">
-                    <img src="./assets/images/header/mobile/1.png" alt="Меню">
+            <div data-category-id="hot" class="header__modal-container">
+                <div class="header__modal">
+                    <ul class="header__modal-items">
+                        <li class="header__modal-item">Пароконвектоматы</li>
+                        <li class="header__modal-item">Конвекционные печи</li>
+                        <li class="header__modal-item">Плиты</li>
+                        <li class="header__modal-item">Электросковороды</li>
+                        <li class="header__modal-item">Шкафы жарочные</li>
+                        <li class="header__modal-item">Котлы</li>
+                        <li class="header__modal-item">Фритюрницы</li>
+                        <li class="header__modal-item">Жарочные поверхности</li>
+                        <li class="header__modal-item">Кипятильники</li>
+                        <li class="header__modal-item">Водонагреватели</li>
+                        <li class="header__modal-item">Столы тепловые</li>
+                        <li class="header__modal-item">Мармиты</li>
+                        <li class="header__modal-item">Тостеры</li>
+                        <li class="header__modal-item">Шкафы тепловые</li>
+                    </ul>
+                    <div class="header__modal-content">
+                        <div class="header__modal-product">
+                            <span>Бойлерные</span>
+                            <span>Инжекторные</span>
+                            <span>Все сразу</span>
+                        </div>
+                        <div class="header__modal-brands">
+                            <span>Бренды</span>
+                            <ul>
+                                <li>Abat</li>
+                                <li>Unox</li>
+                                <li>Проммарш</li>
+                                <li>Atesy</li>
+                                <li>Rational</li>
+                            </ul>
+                        </div>
+                        <div class="header__modal-countries">
+                            <div class="header__modal-name">Страны</div>
+                            <div class="header__modal-country">
+                                <img src="./assets/images/header/modal/1.png" alt="Флаг Испании">
+                                <span>Испания</span>
+                            </div>
+                            <div class="header__modal-country">
+                                <img src="./assets/images/header/modal/2.png" alt="Флаг Италии">
+                                <span>Италия</span>
+                            </div>
+                            <div class="header__modal-country">
+                                <img src="./assets/images/header/modal/3.png" alt="Флаг Германии">
+                                <span>Германия</span>
+                            </div>
+                            <div class="header__modal-country">
+                                <img src="./assets/images/header/modal/4.png" alt="Флаг Турции">
+                                <span>Турция</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__modal-info">
+                        <img src="./assets/images/header/modal/5.png" alt="Пароконвектомат">
+                        <span>Пароконвектоматы</span>
+                        <a class="header__modal-btn" href="#">Все сразу</a>
+                    </div>
                 </div>
-                <div class="header__mobilehead">
-                    <img src="./assets/images/header/mobile/2.png" alt="Столовая.РУ">
-                </div>
-                <div class="header__mobileinfo">
-                    <span class="header__mobiletitle">Столовая.РУ</span>
-                    <span class="header__mobiletext">Создание пищеблоков</span>
-                </div>
-                <div class="header__mobilesearch">
-                    <img src="./assets/images/header/mobile/3.png" alt="Поиск">
-                </div>
-                <a href="tel:84957907205" class="header__phone">
-                    <img src="./assets/images/header/mobile/4.png" alt="Позвонить">
-                </a>
-                <div class="basket__mobile">
-                    <span>12</span>
-                    <img src="./assets/images/header/mobile/5.png" alt="Корзина">
-                </div>
+                <div class="shadow"></div> 
             </div>
-        </section>
 
-        <section class="header__bottommobile">
-            <span class="bottomtitle__span"><strong>Оборудование</strong></span>
-        </section>
+            <div data-category-id="cold" class="header__modal-container header__modal-container--big">
+                <div class="header__modal">
+                    <ul class="header__modal-items">
+                        <li class="header__modal-item">Холодильные шкафы</li>
+                        <li class="header__modal-item">Камеры холодильные</li>
+                        <li class="header__modal-item">Моноблоки</li>
+                        <li class="header__modal-item">Сплит-системы</li>
+                        <li class="header__modal-item">Столы холодильные</li>
+                        <li class="header__modal-item">Витрины холодильные</li>
+                        <li class="header__modal-item">Горки холодильные</li>
+                        <li class="header__modal-item">Бонеты</li>
+                        <li class="header__modal-item">Лари морозильные</li>
+                        <li class="header__modal-item">Льдогенераторы</li>
+                        <li class="header__modal-item">Шкафы шоковой заморозки</li>
+                        <li class="header__modal-item">Кегенераторы</li>
+                    </ul>
+                    <div class="header__modal-content header__modal-content--big">
+                        <div class="header__modal-block">
+                            <div class="header__modal-product">
+                                <span>Среднетемпературные</span>
+                                <span>Низкотемпературные</span>
+                                <span>Универсальные</span>
+                                <span>Комбинированные</span>
+                                <span>Барные</span>
+                                <span>Все сразу</span>
+                            </div>
+                            <div class="header__modal-countries">
+                                <div class="header__modal-name">Страны</div>
+                                <div class="header__modal-country">
+                                    <img src="./assets/images/header/modal/1.png" alt="Флаг Испании">
+                                    <span>Испания</span>
+                                </div>
+                                <div class="header__modal-country">
+                                    <img src="./assets/images/header/modal/2.png" alt="Флаг Италии">
+                                    <span>Италия</span>
+                                </div>
+                                <div class="header__modal-country">
+                                    <img src="./assets/images/header/modal/3.png" alt="Флаг Германии">
+                                    <span>Германия</span>
+                                </div>
+                                <div class="header__modal-country">
+                                    <img src="./assets/images/header/modal/4.png" alt="Флаг Турции">
+                                    <span>Турция</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__modal-brands">
+                            <span>Бренды</span>
+                            <ul>
+                                <li>ELECTROLUX</li>
+                                <li>Gastrorag</li>
+                                <li>АРИАДА</li>
+                                <li>Abat</li>
+                                <li>МХМ</li>
+                                <li>ПОЛЮС</li>
+                                <li>Hicold</li>
+                                <li>POLAIR</li>
+                                <li>Премьер</li>
+                                <li>Бирюса</li>
+                                <li>Россия</li>
+                                <li>TEFCOLD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__modal-info header__modal-info--big">
+                        <img src="./assets/images/header/modal/6.png" alt="Холодильник">
+                        <span>Холодильное оборудование</span>
+                        <a class="header__modal-btn header__modal-btn--big" href="#">Все сразу</a>
+                    </div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+
+
+        </div>
 
     </header>
 
@@ -190,81 +347,76 @@
                 </ul>
             </aside>
             <section class="section__slider">
-                <div class="slider">
-                    <div class="slider__content">
-                        <div class="slider__info">
-                            <div class="slider__portfolio">Портфолио</div>
-                            <div class="slider__header">
-                                <span class="slider__title">НИИ скорой помощи
-                                    им. Н.В. Склифосовского</span>
-                                <span class="slider__text">Оборудование для пищеблоков</span>
+                <div class="slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="slider__content swiper-slide">
+                            <div class="slider__info">
+                                <div class="slider__portfolio">Портфолио</div>
+                                <div class="slider__header">
+                                    <span class="slider__title">НИИ скорой помощи
+                                        им. Н.В. Склифосовского</span>
+                                    <span class="slider__text">Оборудование для пищеблоков</span>
+                                </div>
+                                <div class="slider__link">
+                                    <a href="#">Подробнее</a>
+                                </div>
                             </div>
-                            <div class="slider__link">
-                                <a href="#">Подробнее</a>
+                            <div class="slider__phonecontent">
+                                <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
                             </div>
                         </div>
-                        <div class="slider__phonecontent">
-                            <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
+                        <div class="slider__content swiper-slide">
+                            <div class="slider__info">
+                                <div class="slider__portfolio">Портфолио</div>
+                                <div class="slider__header">
+                                    <span class="slider__title">НИИ скорой помощи
+                                        им. Н.В. Склифосовского</span>
+                                    <span class="slider__text">Оборудование для пищеблоков</span>
+                                </div>
+                                <div class="slider__link">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="slider__phonecontent">
+                                <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
+                            </div>
+                        </div>
+                        <div class="slider__content swiper-slide">
+                            <div class="slider__info">
+                                <div class="slider__portfolio">Портфолио</div>
+                                <div class="slider__header">
+                                    <span class="slider__title">НИИ скорой помощи
+                                        им. Н.В. Склифосовского</span>
+                                    <span class="slider__text">Оборудование для пищеблоков</span>
+                                </div>
+                                <div class="slider__link">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="slider__phonecontent">
+                                <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
+                            </div>
+                        </div>
+                        <div class="slider__content swiper-slide">
+                            <div class="slider__info">
+                                <div class="slider__portfolio">Портфолио</div>
+                                <div class="slider__header">
+                                    <span class="slider__title">НИИ скорой помощи
+                                        им. Н.В. Склифосовского</span>
+                                    <span class="slider__text">Оборудование для пищеблоков</span>
+                                </div>
+                                <div class="slider__link">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="slider__phonecontent">
+                                <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
+                            </div>
                         </div>
                     </div>
-                    <div class="slider__content">
-                        <div class="slider__info">
-                            <div class="slider__portfolio">Портфолио</div>
-                            <div class="slider__header">
-                                <span class="slider__title">НИИ скорой помощи
-                                    им. Н.В. Склифосовского</span>
-                                <span class="slider__text">Оборудование для пищеблоков</span>
-                            </div>
-                            <div class="slider__link">
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="slider__phonecontent">
-                            <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
-                        </div>
-                    </div>
-                    <div class="slider__content">
-                        <div class="slider__info">
-                            <div class="slider__portfolio">Портфолио</div>
-                            <div class="slider__header">
-                                <span class="slider__title">НИИ скорой помощи
-                                    им. Н.В. Склифосовского</span>
-                                <span class="slider__text">Оборудование для пищеблоков</span>
-                            </div>
-                            <div class="slider__link">
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="slider__phonecontent">
-                            <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
-                        </div>
-                    </div>
-                    <div class="slider__content">
-                        <div class="slider__info">
-                            <div class="slider__portfolio">Портфолио</div>
-                            <div class="slider__header">
-                                <span class="slider__title">НИИ скорой помощи
-                                    им. Н.В. Склифосовского</span>
-                                <span class="slider__text">Оборудование для пищеблоков</span>
-                            </div>
-                            <div class="slider__link">
-                                <a href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="slider__phonecontent">
-                            <img src="./assets/images/main/slider/1.png" alt="Пищеблок">
-                        </div>
-                    </div>
-                    <div class="slider__nav">
-                        <button></button>
-                        <ul class="slider__dots">
-                            <li class="slider__dot slider__dot--active"></li>
-                            <li class="slider__dot"></li>
-                            <li class="slider__dot"></li>
-                            <li class="slider__dot"></li>
-                        </ul>
-                        <button></button>
-                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="slider__btn swiper-button-prev"></div>
+                    <div class="slider__btn swiper-button-next"></div>
                 </div>
                 <div class="sale">
                     <div class="sale__content">
@@ -912,8 +1064,10 @@
 
     </footer>
 
-    <script src="./scripts/slider.js"></script>
     <script src="./scripts/services.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/menuModals.js"></script>
 
 </body>
 

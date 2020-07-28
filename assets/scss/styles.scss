@@ -47,7 +47,7 @@ input {
     background-color: #f3f1f1;
 }
 
-/* Переменные и наборы стилей*/
+/* Переменные и наборы стилей */
 
 $main-color: #e7e6e6;
 $second-color: #67be7e;
@@ -108,6 +108,200 @@ $hover-color: #faad3d;
     height: 212px;
     width: 100%;
     z-index: 1000;
+}
+
+.header__content {
+    position: relative;
+    height: inherit;
+}
+
+/* Модалка */
+
+.header__modal-container {
+    display: none;
+    height: 612px;
+    width: 1168px;
+    position: absolute;
+    top: 212px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.header__modal-container--big {
+    max-width: 1403px;
+    width: 100%;
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(#000000, 0.5);
+    z-index: -1;
+}
+
+.header__modal {
+    height: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.header__modal-items {
+    width: 399px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    background-color: #ffffff;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.header__modal-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 4.7vw;
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+    &::after {
+        @include arrow(#b8b8b8);
+        margin: 0 17px;
+    }
+    &:hover {
+        &::after {
+            @include arrow(#bae0a1);
+        }
+        color: $hover-color;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.header__modal-content {
+    width: 328px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.header__modal-content--big {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 623px;
+}
+
+.header__modal-block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.header__modal-product {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 1.7;
+    span {
+        cursor: pointer;
+        &:hover {
+            color: #fab249;
+        }
+    }
+}
+
+.header__modal-brands {
+    padding: 22px 0 22px 30px;
+    border-bottom: 1px solid #eeeeee;
+    &:last-child {
+        border-left: 1px solid #eeeeee;
+        border-bottom: none;
+        padding-top: 0;
+    }
+    span {
+        color: #aaaaaa;
+    }
+    ul {
+        font-size: 24px;
+    }
+    li {
+        cursor: pointer;
+        &:hover {
+            color: #fab249;
+        }
+    }
+}
+
+.header__modal-countries {
+    padding-top: 22px;
+    padding-left: 30px;
+}
+
+.header__modal-name {
+    color: #aaaaaa;
+    margin-bottom: 10px;
+}
+
+.header__modal-country {
+    display: flex;
+    align-items: center;
+    span {
+        cursor: pointer;
+        &:hover {
+            color: #fab249;
+        }
+    }
+    img {
+        margin-right: 8px;
+    }
+}
+
+.header__modal-info {
+    @extend %center;
+    flex-direction: column;
+    width: 441px;
+    height: inherit;
+    background-color: #34a853;
+    color: #ffffff;
+    span {
+        font-size: 24px;
+    }
+    img {
+        margin-bottom: 45px;
+    }
+}
+
+.header__modal-info--big {
+    height: inherit;
+    background-color: $hover-color;
+}
+
+.header__modal-btn {
+    @extend %center;
+    height: 35px;
+    width: 129px;
+    margin-top: 22px;
+    background-color: $hover-color;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.header__modal-btn--big {
+    background-color: #191919;
 }
 
 .header__toptitle {
@@ -231,6 +425,7 @@ $hover-color: #faad3d;
 .title__selector {
     display: flex;
     align-items: center;
+    position: relative;
     width: 885px;
     height: inherit;
     margin-left: 89px;
@@ -310,7 +505,7 @@ $hover-color: #faad3d;
 
 .selector__name {
     @extend %center;
-    width: 65px;
+    width: 220px;
     height: 35px;
     background-color: #f1f1f1;
     margin-right: 1px;
@@ -325,6 +520,21 @@ $hover-color: #faad3d;
         border-top: 6px solid #3c3c3c;
         margin-top: 6px;
         margin-left: 6px;
+    }
+}
+
+.selector__block {
+    position: absolute;
+    display: none;
+    top: 51px;
+    width: 213px;
+    height: 357px;
+    background-color: #f1f1f1;
+    li {
+        cursor: pointer;
+        &:hover {
+            color: #41ad5e;
+        }
     }
 }
 
@@ -486,28 +696,9 @@ $hover-color: #faad3d;
     }
 }
 
-.slider__dots {
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.slider__dot {
-    display: flex;
-    border: 1px solid #ffffff;
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    margin-right: 11px;
-    cursor: pointer;
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.slider__dot--active {
-    background-color: #ffffff;
+.slider__btn {
+    opacity: 0 !important;
+    pointer-events: none;
 }
 
 /* Распродажа */
@@ -1018,6 +1209,7 @@ $hover-color: #faad3d;
     height: 49px;
     border-radius: 100%;
     border: none;
+    cursor: pointer;
     background-color: #282828;
     font-size: var(--medium-text);
     color: #ffffff;
@@ -1246,7 +1438,6 @@ $hover-color: #faad3d;
 
     .toptitle__link {
         padding: 0 1%;
-        height: 28px;
         &:first-child {
             padding-left: 0;
         }
@@ -1509,34 +1700,6 @@ $hover-color: #faad3d;
         height: 74.13vw;
     }
 
-    .slider__nav {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 5.33vw;
-        button {
-            content: "";
-            display: block;
-            width: 18.4px;
-            height: 18.4px;
-            margin: 0 35px;
-            border: none;
-            border-bottom: 1px solid #ffffff;
-            border-left: 1px solid #ffffff;
-            background-color: inherit;
-            color: #ffffff;
-            &:first-child {
-                transform: rotate(45deg);
-            }
-            &:last-child {
-                transform: rotate(-135deg);
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-
     .slider__content {
         padding: 12vw 4vw 0 4vw;
     }
@@ -1752,7 +1915,7 @@ $hover-color: #faad3d;
         margin-left: 6vw;
     }
 
-    .recommendation__text{
+    .recommendation__text {
         font-size: 3.33vw;
         white-space: initial;
     }
