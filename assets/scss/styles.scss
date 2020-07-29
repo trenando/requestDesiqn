@@ -361,6 +361,7 @@ $hover-color: #faad3d;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     &::after {
         content: "";
         display: block;
@@ -402,6 +403,10 @@ $hover-color: #faad3d;
     &:last-child {
         margin-right: 0;
     }
+}
+
+.category-phone {
+    padding-right: 0;
 }
 
 .toptitle__mail {
@@ -771,8 +776,8 @@ $hover-color: #faad3d;
 .slider {
     display: flex;
     flex-direction: column;
-    max-width: 902px;
-    width: 100%;
+    max-width: 902px !important;
+    width: 100% !important;
     height: 476px;
     background-color: #282828;
 }
@@ -833,6 +838,15 @@ $hover-color: #faad3d;
 .slider__btn {
     opacity: 0 !important;
     pointer-events: none;
+}
+
+.swiper-pagination-bullet{
+    border: 1px solid #ffffff;
+    background-color: transparent !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #ffffff !important;
 }
 
 /* Распродажа */
@@ -1586,6 +1600,10 @@ $hover-color: #faad3d;
         @include section(200px, 20px);
     }
 
+    .section__slider{
+        width: calc(100% - 321px) !important;
+    }
+
     .slider__content {
         padding: 40px 50px 0;
     }
@@ -1833,6 +1851,23 @@ $hover-color: #faad3d;
         margin-bottom: 4.66vw;
     }
 
+    .slider__btn {
+        top: 92% !important;
+        opacity: 1 !important;
+        pointer-events: all !important;
+        color: #ffffff !important;
+        &::after{
+            font-size: 16px !important;
+        }
+    }
+
+    .slider__btn-small{
+        top: 95% !important;
+    }
+
+    .swiper-button-disabled{
+        opacity: 0.35 !important;
+    }
     /* Распродажа */
 
     .sale {
@@ -2315,7 +2350,6 @@ $hover-color: #faad3d;
         height: 220px;
     }
     .services__content {
-        max-height: 382px;
         img {
             height: 202px;
         }
