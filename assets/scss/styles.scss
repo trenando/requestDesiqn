@@ -1824,7 +1824,7 @@ $hover-color: #faad3d;
 
     .section__slider {
         flex-direction: column;
-        width: 100%;
+        width: 100% !important;
     }
 
     .slider {
