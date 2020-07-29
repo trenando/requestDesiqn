@@ -669,7 +669,17 @@ $hover-color: #faad3d;
     width: 213px;
     height: 357px;
     background-color: #f1f1f1;
+    box-sizing: border-box;
+    line-height: 1.1;
+    div{
+        box-sizing: border-box;
+        padding: 15px 0 35px 15px;
+    }
+    ul{
+        padding-left: 15px;
+    }
     li {
+        margin-bottom: 8px;
         cursor: pointer;
         &:hover {
             color: #41ad5e;
